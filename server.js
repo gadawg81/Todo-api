@@ -38,12 +38,18 @@ app.get('/todos/:id', function (req, res) {
 		res.json(matchedTodo);
 	} else {
 		res.status(404).send();
-	}
+	};
 
 	// for (var l_id = 0; l_id < todos.length; l_id++) {
-	// 	if (todoID = todos[l_id].id) {
+	// 	if (todoID === todos[l_id].id) {
 	// 		matchedTodo = l_id;
 	// 	};
+	// };
+
+	// if (typeof matchedTodo !== 'undefined') {
+	// 	res.json(todos[matchedTodo]);
+	// } else {
+	// 	res.status(404).send();
 	// };
 
 });
