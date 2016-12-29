@@ -54,7 +54,7 @@ app.delete('/todos/:id', function (req, res) {
 	} else {
 		todos = _.without(todos, matchedTodo);
 		res.json(matchedTodo);
-	};
+	}
 	
 });			
 
